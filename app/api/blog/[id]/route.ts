@@ -15,7 +15,7 @@ export const GET = async (req: Request) => {
 };
 
 export const PUT = async (req: Request) => {
-	// update a post by id
+	// Update a post by id
 	try {
 		const { title, desc } = await req.json();
 		const id = req.url.split('blog/')[1];
